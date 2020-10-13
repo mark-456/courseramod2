@@ -1,0 +1,125 @@
+
+.Header{text-align: center;
+font-size: 30px;
+font-style: italic;
+margin-bottom: 50px;
+margin-top: 30px;
+}
+
+.box ul li p{font-family: helvetica;
+  	color: black;
+  	text-align: center;
+  	font-size: 20px;
+  	display: inline-block;
+  	padding-top: 33px;
+}
+
+.box{
+	width: 95%;
+	overflow: hidden;
+	background: none;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+.box ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+.box ul li{
+	list-style: none;
+	float: left;
+	width: 20%;
+	height: 300px;
+	background: gray;
+	margin: 40px 40px 0px 100px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	position: relative;
+}
+
+.box ul li:hover{ 
+	opacity: 0.9;
+ }
+
+.box ul li .chicken{
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	background: pink;
+	text-align: right;
+	font-size: 30px;
+	border: 2px solid black;
+	display: inline-block;
+	float: left;
+	position: absolute;
+	top: 0px;
+	right:0px;
+	padding-right:10px;
+
+}
+
+ .box ul li .beef{
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	background: red;
+	text-align: right;
+	font-size: 30px;
+	border: 2px solid black;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right:0px;
+	padding-right:10px;
+ }
+
+ .box ul li .sushi{
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	background: yellow;
+	text-align: right;
+	font-size: 30px;
+	border: 2px solid black;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right:0px;
+	padding-right: 10px;
+ }
+
+ @media screen and ( max-width: 1200px){
+ 	.box{
+ 		width:100%;
+ 	}
+ 	.box ul li{
+ 		width: 40%;
+ 		margin-left: 50px;
+ 	}
+ }
+
+@media screen and ( max-width: 991px){
+	.box ul li .chicken div p{
+		width: 40%;
+	}
+	.box ul li .beef div p{
+		width: 40%;
+	}
+	.box ul li .sushi div p{
+		width: 100%;
+	}
+ }
+
+ @media screen and ( max-width: 750px){
+ 	.box ul li{
+ 		width: 100%;
+ 		padding: 0px;
+ 	}
+
+ 	.box ul li{
+ 	float: none;
+ 	width: 90%;
+ 	margin: 40px auto; 
+  }
